@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}MrDense Developer | Sign In{% endblock %} 
+{% block content %}
+<form method="post">
+    <h3 align="center">Sign in with your Developer Hub Account.</h3>
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input
+            type="text"
+            class="form-control"
+            id="username"
+            name="username"
+            placeholder="Enter your username for your Developer Account."
+        />
+        <label for="password">Password</label>
+        <input
+            type="password"
+            class="form-control"
+            id="password"
+            name="password"
+            placeholder="Enter your password for your Developer Account."
+        />
+    </div>
+    <br/>
+    <button type="submit" class="btn btn-primary">Sign in</button>
+    <label align="center">* If you forgot your password or username, you will not be able to recover your Developer Account.</label>
+</form>
+{% endblock %}

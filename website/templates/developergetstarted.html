@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}MrDense Developer | Create Account{% endblock %} 
+{% block content %}
+<form method="post">
+    <h3 align="center">Create your Developer Hub Account.</h3>
+    <div class="form-group">
+        <label for="email">Email address (You may need to verify your email afterwards.)</label>
+        <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="Enter your email address for your Developer Account."
+        />
+        <label for="username">Username (Use a fake name; don't use your real name.)</label>
+        <input
+            type="text"
+            class="form-control"
+            id="username"
+            name="username"
+            placeholder="Enter your username for your Developer Account."
+        />
+        <label for="password">Password (Use a password not used on other websites.)</label>
+        <input
+            type="password"
+            class="form-control"
+            id="password"
+            name="password"
+            placeholder="Enter your password for your Developer Account."
+        />
+        <label for="password">Confirm Password</label>
+        <input
+            type="password"
+            class="form-control"
+            id="password2"
+            name="password2"
+            placeholder="Confirm your password for your Developer Account."
+        />
+    </div>
+    <br/>
+    <button type="submit" class="btn btn-primary">Create account</button>
+    <label align="center">* By creating an account; you agree that you're atleast 13 years old. You may be asked to verify your identity using your government issued ID. This is very very rare. It won't ask you 90% of the time. If we can't verify your ID within 14 days, or if you use a Fake ID; your account will be permanently disabled.</label>
+</form>
+{% endblock %}
